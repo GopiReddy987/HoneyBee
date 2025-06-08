@@ -10,8 +10,12 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductsComponent {
   products = [
-    { id: 1, name: 'Product 1', price: 99.99, image: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Product 2', price: 149.99, image: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Product 3', price: 199.99, image: 'https://via.placeholder.com/150' }
+    { id: 1, name: 'Honey – ¼ kg', price: 5.99, image: 'https://via.placeholder.com/150' },
+    { id: 2, name: 'Honey – ½ kg', price: 9.99, image: 'https://via.placeholder.com/150' },
+    { id: 3, name: 'Honey – 1 kg', price: 17.99, image: 'https://via.placeholder.com/150' }
   ];
+
+  addToCart(product: any) {
+    alert(`${product.name} added to cart`);
+  }
 } 
